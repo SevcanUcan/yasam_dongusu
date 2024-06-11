@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- EditText for user input -->
+    <EditText
+        android:id="@+id/edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your name"
+        android:textSize="18sp"
+        android:padding="10dp"
+        />
+
+    <!-- ScrollView containing lifecycle text -->
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/lifecycle_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lifecycle States:"
+            android:textSize="18sp"
+            android:padding="10dp"/>
+    </ScrollView>
+
+    <!-- Button for offering -->
+    <Button
+        android:id="@+id/offer_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Offer Button"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        />
+</LinearLayout>
